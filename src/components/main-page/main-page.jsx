@@ -5,7 +5,6 @@ import PlaceCard from '../place-card/place-card';
 const MainPage = (props) => {
   const {placeCount} = props;
   return (
-    <React.Fragment>
       <div className="page page--gray page--main">
         <header className="header">
           <div className="container">
@@ -104,14 +103,11 @@ const MainPage = (props) => {
           </div>
         </main>
       </div>
-    </React.Fragment >
   );
 };
-
 
 MainPage.propTypes = {
   placeCount: PropTypes.array.isRequired,
 };
-
 
 export default MainPage;
